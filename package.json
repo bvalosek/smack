@@ -1,0 +1,7 @@
+{
+  "name": "smack",
+  "version": "0.1.0",
+  "description": "Low-level events and observable library.",
+  "author": "Brandon Valosek",
+  "license": "MIT"
+}
