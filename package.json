@@ -1,7 +1,19 @@
 {
   "name": "smack",
   "version": "0.1.0",
-  "description": "Low-level events and observable library.",
+  "description": "A simple event and observable object library.",
   "author": "Brandon Valosek",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "browserify": "~2.35.1",
+    "grunt-contrib-jshint": "~0.7.1",
+    "grunt-browserify": "~1.2.11",
+    "coffeeify": "~0.5.2",
+    "grunt-contrib-qunit": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3"
+  },
+  "dependencies": {
+    "typedef": "0.18.0"
+  }
 }
