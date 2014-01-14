@@ -3,6 +3,13 @@
   "version": "0.2.2",
   "description": "A simple event and observable object library.",
   "author": "Brandon Valosek",
+  "keywords": [
+    "event",
+    "events",
+    "observer",
+    "observable",
+    "binding"
+  ],
   "license": "MIT",
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -13,7 +20,17 @@
     "grunt-contrib-qunit": "~0.3.0",
     "grunt-contrib-watch": "~0.5.3"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bvalosek/smack.git"
+  },
   "dependencies": {
     "typedef": "0.18.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt test"
   }
 }
