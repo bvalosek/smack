@@ -1,6 +1,6 @@
 {
   "name": "smack",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A simple event and observable object library.",
   "author": "Brandon Valosek",
   "license": "MIT",
