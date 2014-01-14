@@ -129,6 +129,15 @@ bob.name = 'Bobby';
 
 ### class `Binding`
 
+...
+
+## Tern Support
+
+The library files are all decorated with [JSDoc](http://usejsdoc.org/)-style
+annotations that work great with the [Tern](http://ternjs.net/) code interence
+system. Combined with the Node plugin (see this project's `.tern-project`
+file`), you can have intelligent autocomplete for methods in this library.
+
 ## Testing
 
 Unit testing is done by [QUnit](http://qunitjs.com/) and can be run from the
