@@ -32,5 +32,6 @@
   },
   "scripts": {
     "test": "grunt test"
-  }
+  },
+  "readmeFilename": "README.md"
 }
