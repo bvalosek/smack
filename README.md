@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/bvalosek/smack.png?branch=master)](https://travis-ci.org/bvalosek/smack)
 [![NPM version](https://badge.fury.io/js/smack.png)](http://badge.fury.io/js/smack)
+[![browser support](https://ci.testling.com/bvalosek/smack.png)](https://ci.testling.com/bvalosek/smack)
 
 A small Javascript library for events, observable objects, and data binding.
 
@@ -158,32 +159,19 @@ data to remain in-sync across, without having to manually do the accounting.
 
 ## Tern Support
 
-The library files are all decorated with [JSDoc](http://usejsdoc.org/)-style
-annotations that work great with the [Tern](http://ternjs.net/) code interence
+The library files are all decorated with [JSDoc3](http://usejsdoc.org/)-style
+annotations that work great with the [Tern](http://ternjs.net/) code inference
 system. Combined with the Node plugin (see this project's `.tern-project`
-file`), you can have intelligent autocomplete for methods in this library.
+file), you can have intelligent autocomplete for methods in this library.
 
 ## Testing
 
-Unit testing is done by [QUnit](http://qunitjs.com/) and can be run from the
-command line via [Grunt](http://gruntjs.com/).
+Testing is done with [Tape](http://github.com/substack/tape) and can be run
+with the command `npm test`.
 
-Testing requires [node/npm](http://nodejs.org) and
-[grunt-cli](https://github.com/gruntjs/grunt-cli) to be installed on your
-system.
+Automated CI cross-browser testing is provided by
+[Testling](http://ci.testling.com/bvalosek/smack).
 
-To ensure you have the required apps:
-
-```
-npm install -g grunt-cli
-```
-
-Then install all the dev dependencies and run the tests:
-
-```
-npm install
-grunt test
-```
 
 ## License
 Copyright 2014 Brandon Valosek
