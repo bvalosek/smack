@@ -7,8 +7,8 @@ A small Javascript library for events, observable objects, and data binding.
 
 ## Installation
 
-**Smack** is meant to be used with [Browserify](http://browserify.org/), so
-install it with npm:
+**Smack** can be used on the server with NodeJS or on the client, built with
+[Browserify](http://browserify.org/), so install with npm:
 
 ```
 npm install smack
@@ -129,7 +129,32 @@ bob.name = 'Bobby';
 
 ### class `Binding`
 
-...
+A proxying object that allows you to connect a source to one or more targets.
+This allows for a way to keep certain objects in sync via databinding. Assuming
+a source implements/mixes in `ChangeNotifier`, all targets will be kept in
+sync.
+
+```javascript
+
+// Using the Person class above ...
+var me = new Person();
+
+// Create a binding sourcing the 'name' property of the instance 'me'.
+var binding = new Binding();
+binding.setSource(me, 'name');
+
+var nameTag = { value: '[BLANK]' };
+
+// Proxy all changes from the source (me#name) to the nameTag object
+binding.setTarget(nameTag, 'value');
+
+nameTag.value // === '[BLANK]'
+me.name = 'Brandon';
+nameTag.value // === 'Brandon'
+```
+
+Bindings are extremely useful when creating de-coupled surfaces that you want
+data to remain in-sync across, without having to manually do the accounting.
 
 ## Tern Support
 
