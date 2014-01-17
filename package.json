@@ -2,7 +2,6 @@
   "name": "smack",
   "version": "0.3.1",
   "description": "A simple event and observable object library.",
-  "author": "Brandon Valosek",
   "keywords": [
     "event",
     "events",
@@ -10,15 +9,28 @@
     "observable",
     "binding"
   ],
+  "author" : {
+    "name" : "Brandon Valosek",
+    "email" : "bvalosek@gmail.com",
+    "url" : "http://brandon.is/awesome"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "readmeFilename": "README.md",
+  "main": "index.js",
   "license": "MIT",
   "devDependencies": {
     "grunt": "~0.4.1",
     "browserify": "~2.35.1",
     "grunt-contrib-jshint": "~0.7.1",
     "grunt-browserify": "~1.2.11",
-    "coffeeify": "~0.5.2",
     "grunt-contrib-qunit": "~0.3.0",
-    "grunt-contrib-watch": "~0.5.3"
+    "grunt-contrib-watch": "~0.5.3",
+    "tape": "~2.3.2"
   },
   "repository": {
     "type": "git",
@@ -27,11 +39,17 @@
   "dependencies": {
     "typedef": "0.18.0"
   },
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "grunt test"
-  },
-  "readmeFilename": "README.md"
+  "testling": {
+    "files" : "test/*.js",
+    "browsers" : {
+      "ie/6..latest",
+      "chrome/20..latest",
+      "firefox/10..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/4.2"
+    }
+  }
 }

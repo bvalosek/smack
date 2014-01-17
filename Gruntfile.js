@@ -17,10 +17,7 @@ module.exports = function(grunt) {
       test: {
         src: ['test/main.js'],
         dest: 'test/bin/main.js',
-        options: {
-          debug: true,
-          transform: ['coffeeify']
-        }
+        options: { debug: true }
       }
     },
 
