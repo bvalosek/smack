@@ -9,10 +9,10 @@
     "observable",
     "binding"
   ],
-  "author" : {
-    "name" : "Brandon Valosek",
-    "email" : "bvalosek@gmail.com",
-    "url" : "http://brandon.is/awesome"
+  "author": {
+    "name": "Brandon Valosek",
+    "email": "bvalosek@gmail.com",
+    "url": "http://brandon.is/awesome"
   },
   "directories": {
     "test": "test"
@@ -30,7 +30,8 @@
     "grunt-browserify": "~1.2.11",
     "grunt-contrib-qunit": "~0.3.0",
     "grunt-contrib-watch": "~0.5.3",
-    "tape": "~2.3.2"
+    "tape": "~2.3.2",
+    "underscore": "~1.5.2"
   },
   "repository": {
     "type": "git",
@@ -40,8 +41,8 @@
     "typedef": "0.18.0"
   },
   "testling": {
-    "files" : "test/*.js",
-    "browsers" : [
+    "files": "test/*.js",
+    "browsers": [
       "ie/6..latest",
       "chrome/20..latest",
       "firefox/10..latest",
