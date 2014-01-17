@@ -2,9 +2,10 @@
 
 [![Build Status](https://travis-ci.org/bvalosek/smack.png?branch=master)](https://travis-ci.org/bvalosek/smack)
 [![NPM version](https://badge.fury.io/js/smack.png)](http://badge.fury.io/js/smack)
-[![browser support](https://ci.testling.com/bvalosek/smack.png)](https://ci.testling.com/bvalosek/smack)
 
 A small Javascript library for events, observable objects, and data binding.
+
+[![browser support](https://ci.testling.com/bvalosek/smack.png)](https://ci.testling.com/bvalosek/smack)
 
 ## Installation
 
