@@ -41,7 +41,7 @@
   },
   "testling": {
     "files" : "test/*.js",
-    "browsers" : {
+    "browsers" : [
       "ie/6..latest",
       "chrome/20..latest",
       "firefox/10..latest",
@@ -50,6 +50,6 @@
       "iphone/6",
       "ipad/6",
       "android-browser/4.2"
-    }
+    ]
   }
 }
