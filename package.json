@@ -1,6 +1,6 @@
 {
   "name": "smack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small Javascript library for events, observable objects, and data binding.",
   "keywords": [
     "event",
